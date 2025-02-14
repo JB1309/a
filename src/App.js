@@ -10,9 +10,9 @@ import Last from './Last';
 function App() {
   return (
     <div>
-    <Router>
+    <Router basename='/a'>
       <Routes>
-        <Route path="/a/" element={<First />} />
+        <Route path="/" element={<First />} />
         <Route path="/second" element={<Second />} />
         <Route path="/third" element={<Third />} />
         <Route path="/fourth" element={<Fourth />} />
