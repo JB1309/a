@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router,HashRouter, Route, Link, Routes } from 'react-router-dom';
 import './App.css';
 import First from './First'
 import Second from './Second';
@@ -10,7 +10,7 @@ import Last from './Last';
 function App() {
   return (
     <div>
-    <Router basename='/a'>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<First />} />
         <Route path="/second" element={<Second />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/fourth" element={<Fourth />} />
         <Route path="/fifth" element={<Last />} />
       </Routes>
-    </Router>
+    </HashRouter>
     
       
     </div>
