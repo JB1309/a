@@ -12,7 +12,7 @@ function App() {
     <div>
     <Router>
       <Routes>
-        <Route path="/" element={<First />} />
+        <Route path="/a/" element={<First />} />
         <Route path="/second" element={<Second />} />
         <Route path="/third" element={<Third />} />
         <Route path="/fourth" element={<Fourth />} />
